@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dream Weaver Racing — F-26 hydroplane racing in the Hydroplane Racing League's Formula F class. Driver: Kevin Smith of Peabody, MA. Second-generation racing, Ford powered.">
+<title>Dream Weaver Racing — F-26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800;900&family=Saira:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="flag-strip" aria-hidden="true"></div>
+
+<nav>
+  <div class="nav-in">
+    <a href="#" class="logo">Dream <b>Weaver</b> Racing</a>
+    <ul class="nav-links">
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#follow">Follow</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#follow" class="nav-cta">Follow F-26</a>
+      <button class="nav-burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" data-screen-label="Hero">
+  <div class="hero-img"></div>
+  <div class="hero-num cond">26</div>
+  <div class="hero-in">
+    <p class="eyebrow">Hydroplane Racing League · Formula F</p>
+    <h1 class="hero-title cond">Dream Weaver<br><span class="l2">Racing</span></h1>
+    <div class="hero-tags">
+      <span class="tag o">Boat F-26</span>
+      <span class="tag w">Formula F Class</span>
+      <span class="tag w">Driver · Kevin Smith</span>
+    </div>
+  </div>
+  <span class="credit">Photo · Hydroplane Racing League</span>
+</header>
+
+<!-- NEXT RACE BAR — populated by js/main.js from the schedule below -->
+<div class="nextbar" hidden>
+  <div class="nextbar-in">
+    <span class="lbl">Race Weekend</span>
+    <span class="race cond" data-nextbar="race"></span>
+    <span class="when cond" data-nextbar="when"></span>
+    <span class="live"><span class="dot"></span><span data-nextbar="status">Live Now</span></span>
+  </div>
+</div>
+
+<!-- SCHEDULE -->
+<section id="schedule" data-screen-label="Schedule">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-kicker">2026 Season</div>
+        <h2 class="sec-title cond">Race Schedule</h2>
+      </div>
+      <a href="https://hrlhydroplane.com/en/calendrier/" target="_blank" class="sec-link">Full HRL Calendar →</a>
+    </div>
+    <div class="sched">
+      <div class="row" data-start="2026-05-23" data-end="2026-05-24" data-city="Cambridge, MD" data-region="United States">
+        <span class="rnum cond">01</span>
+        <span class="rdate cond">May 23–24</span>
+        <div><div class="rcity cond">Cambridge, MD</div><div class="rregion">United States</div></div>
+        <span class="rbadge b-done">Complete</span>
+      </div>
+      <div class="row" data-start="2026-06-06" data-end="2026-06-07" data-city="Sorel-Tracy Grand Prix" data-region="Québec, Canada">
+        <span class="rnum cond">02</span>
+        <span class="rdate cond">June 6–7</span>
+        <div><div class="rcity cond">Sorel-Tracy, QC</div><div class="rregion">Canada</div></div>
+        <span class="rbadge b-up">Upcoming</span>
+      </div>
+      <div class="row" data-start="2026-06-27" data-end="2026-06-28" data-city="Brockville, ON" data-region="Canada">
+        <span class="rnum cond">03</span>
+        <span class="rdate cond">June 27–28</span>
+        <div><div class="rcity cond">Brockville, ON</div><div class="rregion">Canada</div></div>
+        <span class="rbadge b-up">Upcoming</span>
+      </div>
+      <div class="row" data-start="2026-07-10" data-end="2026-07-12" data-city="Valleyfield, QC" data-region="Canada">
+        <span class="rnum cond">04</span>
+        <span class="rdate cond">July 10–12</span>
+        <div><div class="rcity cond">Valleyfield, QC</div><div class="rregion">Canada</div></div>
+        <span class="rbadge b-up">Upcoming</span>
+      </div>
+      <div class="row" data-start="2026-08-01" data-end="2026-08-02" data-city="North Tonawanda, NY" data-region="United States">
+        <span class="rnum cond">05</span>
+        <span class="rdate cond">Aug 1–2</span>
+        <div><div class="rcity cond">North Tonawanda, NY</div><div class="rregion">United States</div></div>
+        <span class="rbadge b-up">Upcoming</span>
+      </div>
+      <div class="row" data-start="2026-08-22" data-end="2026-08-23" data-city="Beauharnois, QC" data-region="Canada">
+        <span class="rnum cond">06</span>
+        <span class="rdate cond">Aug 22–23</span>
+        <div><div class="rcity cond">Beauharnois, QC</div><div class="rregion">Canada</div></div>
+        <span class="rbadge b-up">Upcoming</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEGACY -->
+<section class="legacy" data-screen-label="Legacy">
+  <div class="wrap">
+    <div class="legacy-grid">
+      <div class="legacy-mark" aria-hidden="true"></div>
+      <div>
+        <div class="sec-kicker">Second-Generation Racing</div>
+        <blockquote class="legacy-quote cond">“I always dreamed of following in my father's footsteps and piloting a hydroplane.”</blockquote>
+        <p class="legacy-note">Kevin's father campaigned the <b>S-26 Dreamweaver</b>. Today the F-26 carries the family name — and the only Ford engine in the field — back onto the water.</p>
+        <div class="legacy-chips">
+          <span class="chip">Racing since 2007</span>
+          <span class="chip">Ford Powered</span>
+          <span class="chip">S-26 → F-26 · Family Legacy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA -->
+<section id="media" class="alt" data-screen-label="Media">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-kicker">On The Water</div>
+        <h2 class="sec-title cond">Photos &amp; Video</h2>
+      </div>
+      <a href="https://www.youtube.com/@HydroplaneRacingLeague" target="_blank" class="sec-link">HRL YouTube →</a>
+    </div>
+    <div class="media-grid">
+      <div class="frame big">
+        <!-- TODO: swap to images/f26-boat.jpg once the photo is saved locally (see CLAUDE.md) -->
+        <img src="https://hrlhydroplane.com/wp-content/uploads/2022/04/F-26-scaled.jpg" alt="F-26 Dream Weaver hydroplane at speed">
+      </div>
+      <div class="stack">
+        <div class="frame sm"><div class="ph">Add Photo</div></div>
+        <div class="frame sm"><div class="ph">Add Photo</div></div>
+      </div>
+    </div>
+    <div class="vids">
+      <div class="vid"><iframe src="https://www.youtube.com/embed/6inB95XFhBk" title="HRL 2026 Livestream Promo" allowfullscreen loading="lazy"></iframe></div>
+      <div class="vid"><iframe src="https://www.youtube.com/embed/cHhYoKfPl_M" title="HRL 2025 Recap" allowfullscreen loading="lazy"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" data-screen-label="Team">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-kicker">Behind The Wheel</div>
+        <h2 class="sec-title cond">The Driver</h2>
+      </div>
+    </div>
+    <div class="driver">
+      <div class="driver-avatar"><span class="cond">KS</span></div>
+      <div class="driver-info">
+        <div class="dk">Pilot · F-26 Dream Weaver</div>
+        <div class="dn cond">Kevin Smith</div>
+        <p>Kevin grew up at the race course watching his father pilot the S-26 Dreamweaver — and always dreamed of following in his footsteps. Since 2007 he's been doing exactly that. Out of Peabody, Massachusetts, Kevin campaigns the F-26 in the HRL's Formula F class: the only Ford-powered boat in a field of Hondas, and proud of it.</p>
+        <div class="dfacts">
+          <span class="fact"><b>Hometown</b>Peabody, MA</span>
+          <span class="fact"><b>Born</b>April 11, 1992</span>
+          <span class="fact"><b>First Season</b>2007</span>
+          <span class="fact"><b>Power</b>Ford</span>
+        </div>
+        <a href="https://hrlhydroplane.com/en/les-pilotes/kevin-smith/" target="_blank" class="dlink">HRL Driver Profile →</a>
+      </div>
+    </div>
+    <div class="crew-head">
+      <div class="sec-kicker">In The Pits</div>
+      <h3 class="crew-title cond">The Crew</h3>
+    </div>
+    <div class="crew">
+      <div class="ccard"><div class="crole">Crew Chief</div><div class="cname cond">Charles Smith</div></div>
+      <div class="ccard"><div class="crole">Chief Engineer</div><div class="cname cond">Justin Polinski</div></div>
+      <div class="ccard"><div class="crole">Team Coordinator</div><div class="cname cond">Mary Smith</div></div>
+      <div class="ccard"><div class="crole">Communications</div><div class="cname cond">Courtney Smith</div></div>
+      <div class="ccard"><div class="crole">Team Member</div><div class="cname cond">Mike Ward</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOLLOW + SPONSORS -->
+<section id="follow" class="alt" data-screen-label="Follow">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="sec-kicker">Stay Connected</div>
+        <h2 class="sec-title cond" style="margin-bottom:24px;">Follow The Team</h2>
+        <div class="social-cards">
+          <a href="https://www.facebook.com/Dream26weaver/" target="_blank" class="scard">
+            <span class="sico"><svg width="22" height="22" viewBox="0 0 24 24" fill="#ff9435"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>
+            <div><div class="sname">Facebook</div><div class="scta">DreamWeaver Hydroplane Racing</div></div>
+          </a>
+          <a href="https://www.instagram.com/dreamweaverracing/" target="_blank" class="scard">
+            <span class="sico"><svg width="22" height="22" viewBox="0 0 24 24" fill="#ff9435"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></span>
+            <div><div class="sname">Instagram</div><div class="scta">@dreamweaverracing</div></div>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="sec-kicker">Partners</div>
+        <h2 class="sec-title cond" style="margin-bottom:24px;">Sponsors</h2>
+        <div class="sponsor-box">
+          <div class="sk">Proud Partners of the F-26</div>
+          <div class="sponsor-slots">
+            <div class="slot named">Charles Smith<br>Plumbing &amp; Heating</div>
+            <div class="slot named">Dez's<br>Paint Shop</div>
+            <div class="slot named">M &amp; N Competition<br>Consultants</div>
+            <div class="slot">Your Logo</div>
+          </div>
+          <p class="sp-note">Want your brand on the boat? <a href="https://www.facebook.com/Dream26weaver/" target="_blank">Get in touch →</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="flag-strip" aria-hidden="true"></div>
+<footer>
+  <div class="wrap foot">
+    <div class="fl cond">Dream <b>Weaver</b> Racing · F-26</div>
+    <div class="fm">Part of the <a href="https://hrlhydroplane.com/en/" target="_blank">Hydroplane Racing League</a></div>
+    <div class="fm">© 2026 Dream Weaver Racing</div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

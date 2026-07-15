@@ -1,0 +1,10 @@
+{
+  // Worker name — must match the name Cloudflare shows when you import the repo,
+  // or git builds will fail. Site will also get dreamweaverracing.workers.dev.
+  "name": "dreamweaverracing",
+  "compatibility_date": "2026-07-12",
+  // Assets-only Worker: no "main" script, just serve the static files in this folder.
+  "assets": {
+    "directory": "./"
+  }
+}
