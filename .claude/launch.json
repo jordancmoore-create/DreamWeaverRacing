@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dreamweaver",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "2626"],
+      "port": 2626
+    }
+  ]
+}

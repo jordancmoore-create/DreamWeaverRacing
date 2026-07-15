@@ -7,13 +7,16 @@ site (`Documents\HerrinChoker\HerrinChokerRacing`) but with its own identity.
 **Domain: dreamweaverracing.com** — purchased July 12 2026 via Cloudflare Registrar
 (same Cloudflare account as herrinchoker.ca).
 
-## Deployment
+## Deployment — LIVE
 
-Git-connected Worker (static assets, no build step). `wrangler.jsonc` is an assets-only
-config (no `main`); `.assetsignore` keeps CLAUDE.md and config files out of the deployed
-site. The Worker name **dreamweaverracing** must match what the Cloudflare dashboard shows
-when importing the repo. Flow: push to `main` on GitHub → Workers Builds deploys →
-custom domain dreamweaverracing.com attached under the Worker's Settings → Domains & Routes.
+Live at **https://dreamweaverracing.com** since July 15 2026. Cloudflare Worker
+**dreamweaverracing** (assets-only static site, no build step), custom domain attached.
+Auto-deploy is connected: **push to `main` → Workers Builds runs `npx wrangler deploy` →
+live in about a minute.** GitHub repo: `jordancmoore-create/DreamWeaverRacing`
+(branch `main`, build command empty). `wrangler.jsonc` is the assets-only config
+(no `main` field — don't add one unless adding Worker code); `.assetsignore` keeps
+CLAUDE.md and config files out of the served site. The Worker name in wrangler.jsonc
+must stay `dreamweaverracing` or git builds break.
 
 ---
 
@@ -73,12 +76,26 @@ then swap both references to `images/f26-boat.jpg` (TODO comments mark the two s
 
 ## What's not done yet
 
-- **`git init` + GitHub remote + Cloudflare import** — see Deployment above; git steps must be
-  run by the user (build session sandbox couldn't shell-write here)
-- **Localize the boat photo** — see hotlink note above
+- **Localize the boat photo** — see hotlink note above; do this before promoting the site,
+  ideally with real photos from Kevin's crew (confirm rights on the HRL shot)
+- **www subdomain** — add www.dreamweaverracing.com as a second custom domain if wanted
+  (Worker → Settings → Domains & Routes)
 - **Photos** — only the one HRL photo; get real team photos + confirm usage rights,
   update the hero `credit` span with the photographer's name
 - **Driver headshot** — replace the "KS" `.driver-avatar` div with an `<img>`
 - **Race results section** — not built (Herrin site doesn't have one either)
 - **Videos** — generic HRL embeds (2026 livestream promo + 2025 recap); swap in
   F-26 footage when it exists
+
+## Local dev notes (this machine)
+
+- **Preview:** `.claude/launch.json` config **dreamweaver** — python http.server, port 2626.
+- **Windows Defender Controlled Folder Access** protects `Documents`: apps not on its
+  allowlist fail writes here with misleading errors (git: `.git: No such file or directory`).
+  `git.exe` was allowlisted July 15 2026 (`C:\Program Files\Git\mingw64\bin\git.exe` and
+  `...\cmd\git.exe`) — a Git upgrade can silently invalidate this; if git write errors
+  return, re-add it via Windows Security → Ransomware protection → Allow an app.
+- For Claude sessions: the Write/Edit tools work here; if a *shell* write (mkdir,
+  redirects, curl -o) fails oddly, suspect CFA and hand the command to the user.
+- Sister site: Herrin Choker Racing (#38 / F-38, herrinchoker.ca) lives at
+  `Documents\HerrinChoker\HerrinChokerRacing` — same HRL schedule, shared design DNA.
